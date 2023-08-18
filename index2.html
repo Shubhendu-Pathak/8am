@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            border: 2px solid red;
+            height: 200px;
+            width: 300px;
+            margin: 100px;
+
+/* offsetX offsetY blurr area color */
+box-shadow: 15px 15px 8px 5px blue,0 -15px 5px 4px red,-20px 0 8px 2px green inset;
+        }
+
+        .ts{
+            margin: 100px;
+/* offsetX offsetY blurr  color */
+text-shadow: 8px 0 5px red,0 8px 5px  blue,-12px 0 5px green ;
+/* color: transparent; */
+        }
+    </style>
+</head>
+<body>
+<h1>Text Shadow</h1>
+<hr>
+
+<h1 class="ts">Peacock</h1>
+
+    <hr>
+    <h1>Box Shadow</h1>
+<hr>
+
+<div class="main"></div>
+
+</body>
+</html>
