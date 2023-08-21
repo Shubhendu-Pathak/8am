@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            border: 5px solid blue;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        section{
-            border: 3px solid red;
-        }
-        /* div>p{
-            background-color: yellow;
-        } */
-/* div + p{
-    background-color: aqua;
-} */
+.one{
+    border: 2px solid red;
+    height: 200px;
+    width: 300px;
 
-/* div p{
-    background-color: burlywood;
-} */
-
-/* div~p{
-    background-color: yellowgreen;
-} */
-
+    margin-bottom: 20px;
+}
+.one-1{
+    background-image: linear-gradient(blue,pink,yellow);
+}
+.one-2{
+    background-image: linear-gradient(to bottom right,blue,pink,yellow);
+}
+.one-3{
+    background-image: linear-gradient(100deg,blue,pink,yellow);
+}
+.one-4{
+    background-image: linear-gradient(45deg,blue 50%,yellow 50%);
+}
+.one-5{
+    background-image: repeating-linear-gradient(to bottom right,blue 50%,pink 90% );
+}
+.one-6{
+    background-image: linear-gradient(to bottom right,rgb(31, 165, 4,0.8),rgb(240, 240, 23,0.4));
+}
     </style>
 </head>
 <body>
-    
-<h1>Combinators</h1>
-<hr>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  -->
 
-<div>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
-    </section>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
-</div>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim blanditiis voluptate eos voluptatum itaque delectus.</p>
+    <h1>Linear Gradient</h1>
+<!--     .one.one-$*6  -->
+    <div class="one one-1"></div>
+    <div class="one one-2"></div>
+    <div class="one one-3"></div>
+    <div class="one one-4"></div>
+    <div class="one one-5"></div>
+    <div class="one one-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptates similique, totam aperiam error soluta!</div>
 
 </body>
 </html>

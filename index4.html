@@ -5,41 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
-            border: 2px solid red;
-            width: 100%;
-            border-collapse: collapse;
+        *{
+            margin:0 ;
+padding: 0;
         }
-        th,td{
+        .one{
             border: 2px solid blue;
+            height: 300px;
+            width: 350px;
+            padding: 50px;
+            margin: 50px;
+
+position: relative;
+
         }
-        th{
-            text-align: left;
+        .two{
+            border: 1px solid red;
+            height: 100%;
+            width: 100%;
+            /* position: relative; */
         }
-        td{
-            text-align: right;
+        .two>h1{
+            border: 1px solid green;
+            width: 130px;
+            background-color: yellow;
+            position: relative;
+            left: 50px;
+            top: 150px;
         }
+.two>h2{
+    border: 1px solid green;
+            width: 130px;
+            background-color: green;
+            color: aliceblue;
+            position: absolute;
+            top: 0;
+            left: 150px;
+}
     </style>
 </head>
 <body>
-    
-<table>
-    <tr>
-        <th>FirstName</th>
-        <th>LastName</th>
-        <th>Email</th>
-    </tr>
-    <tr>
-        <td>Henry</td>
-        <td>Gonzalves</td>
-        <td>asa@rwer.com</td>
-    </tr>
-    <tr>
-        <td>Ralph</td>
-        <td>Jones</td>
-        <td>ere@yahoo.com</td>
-    </tr>
-</table>
 
+    <div class="one">
+        <div class="two">
+            <h1>RainCoat</h1>
+            <h2>Umbrella</h2>
+        </div>
+    </div>
+    
+
+    
 </body>
 </html>

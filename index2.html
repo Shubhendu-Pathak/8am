@@ -8,36 +8,44 @@
         *{
             margin: 0;
             padding: 0;
-        }
-        .main{
-            border: 2px solid red;
-            height: 200px;
-            width: 300px;
-            margin: 100px;
-
-/* offsetX offsetY blurr area color */
-box-shadow: 15px 15px 8px 5px blue,0 -15px 5px 4px red,-20px 0 8px 2px green inset;
+            box-sizing: border-box;
         }
 
-        .ts{
-            margin: 100px;
-/* offsetX offsetY blurr  color */
-text-shadow: 8px 0 5px red,0 8px 5px  blue,-12px 0 5px green ;
-/* color: transparent; */
-        }
+.one{
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.one-1{
+    background-image: conic-gradient(red,blue,green);
+}
+.one-2{
+    background-image: conic-gradient(from 45deg,red,blue,green);
+}
+.one-3{
+    /*  offset X, offset Y  */
+    background-image: conic-gradient(at 10% 50%,red,blue,green);
+}
+.one-4{
+    background-image: conic-gradient(red 0deg,red 50deg,blue 50deg,blue 190deg,green 190deg);
+}
+.one-5{
+    background-image: repeating-conic-gradient(red 0deg,red 15deg,blue 15deg,blue 30deg);
+}
+.one-6{
+    background-image: conic-gradient( rgb(240, 21, 21,0.2),rgb(11, 11, 221,0.8),rgb(10, 156, 10,0.6) );  
+}
+
     </style>
 </head>
 <body>
-<h1>Text Shadow</h1>
-<hr>
-
-<h1 class="ts">Peacock</h1>
-
-    <hr>
-    <h1>Box Shadow</h1>
-<hr>
-
-<div class="main"></div>
-
+    <div class="one one-1"></div>
+    <div class="one one-2"></div>
+    <div class="one one-3"></div>
+    <div class="one one-4"></div>
+    <div class="one one-5"></div>
+    <div class="one one-6"></div>
 </body>
 </html>
